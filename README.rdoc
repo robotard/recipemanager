@@ -21,7 +21,7 @@ chefname: string
 email: string
 
 - chefname must be present
-- chefname must be longer than 5
+- chefname must be between 3 and 40
 - email must be present
 - email must be unique
 - email must be valid
