@@ -1,6 +1,8 @@
 Recipe Manager - Rob Hendricks
 
-Testing specs for recipes
+Testing specs
+Recipes:
+--------
 name: string
 summary: text
 description: text
@@ -13,4 +15,13 @@ description: text
 - description must be between 20 and 500 chars
 - chef_id must be present
 
-DB
+Chef:
+-----
+chefname: string
+email: string
+
+- chefname must be present
+- chefname must be longer than 5
+- email must be present
+- email must be unique
+- email must be valid
