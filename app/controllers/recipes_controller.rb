@@ -18,6 +18,8 @@ class RecipesController < ApplicationController
     
     if @recipe.save
       #do some shit
+      flash[:success] = "Recipe created, yo"
+      redirect_to recipes_path
     else
       render :new
     end
