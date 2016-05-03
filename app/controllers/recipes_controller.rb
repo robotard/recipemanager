@@ -11,4 +11,8 @@ class RecipesController < ApplicationController
   def new
     @recipe = Recipe.new
   end
+  
+  def create
+    @recipe = Recipe.new
+  end
 end
