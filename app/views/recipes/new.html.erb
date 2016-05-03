@@ -7,8 +7,8 @@
   <div class="well col-md-8 col-md-offset-2">
     <%= form_for @recipe do |f| %>
     
-    <%= f.label :title %>
-    <%= f.text_field :title %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
     
     <%= f.label :summary %>
     <%= f.text_field :summary %>
@@ -17,5 +17,6 @@
     <%= f.text_area :description %>
     
     <%= f.submit 'Create recipe', class: "btn btn-success" %>
+    <% end %>
   </div>
 </div>
